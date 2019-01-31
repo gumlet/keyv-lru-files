@@ -17,7 +17,7 @@
     "filesystem"
   ],
   "dependencies": {
-    "debug": "^2.2.0",
+    "debug": "^4.1.1",
     "dur": "^0.0.2",
     "mkdirp": "^0.5.1",
     "queue": "^3.1.0",
