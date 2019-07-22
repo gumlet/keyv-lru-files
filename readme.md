@@ -14,7 +14,7 @@ npm install lru-files-promise
 
 ```` javascript
 
-var lrufiles = require("keyv-lru-files");
+var lrufiles = require("lru-files-promise");
 
 var cache = new lrufiles({
 	dir: "cache", 	  // directory to store caches files
