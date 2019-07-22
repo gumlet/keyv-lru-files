@@ -19,7 +19,7 @@ npm install keyv-lru-files
 var lrufiles = require("keyv-lru-files");
 
 var cache = new lrufiles({
-	dir: "cache" 			// directory to store caches files
+	dir: "cache", 	  // directory to store caches files
 	files: 100,       // maximum number of files
 	size: "1 GB",     // maximum total file size
 	check: 10,  // interval of stale checks in minutes
