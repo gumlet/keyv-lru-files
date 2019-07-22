@@ -29,9 +29,12 @@ filecache.prototype.parseopts = function(opts) {
 	var self = this;
 	var o = {};
 
+	// determine cache root directory
+	if (!opts.hasOwnProperty("root") || typeof opts.root !== "string") opts.root = require.main.filename;
+	
 	// determine cache directory
 	if (!opts.hasOwnProperty("dir") || typeof opts.dir !== "string") opts.dir = "cache";
-	o.dir = path.join(require.main.filename, "..", opts.dir);
+	o.dir = path.join(opts.root, "..", opts.dir);
 
 	// determine maximal total number of files
 	opts.files = (!opts.hasOwnProperty("files")) ? false : parseInt(opts.files,10);
