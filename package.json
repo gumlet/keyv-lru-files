@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
-    "jest": "25.*"
+    "jest": "26.*"
   },
   "scripts": {
     "test": "jest --coverage"
